@@ -11,7 +11,7 @@ body {
     background-color: #F7F1E8;
 }
 
-header{
+header {
     background-color: #A4001C;
     width: 100%;
     padding: 0px 25px 0px 25px;
@@ -19,29 +19,29 @@ header{
     align-items: center;
     justify-content: space-between;
 
-    img{
+    img {
         width: 100px;
     }
 
-    .left{
+    .left {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 50px;
 
-        button{
+        button {
             background: transparent;
             border: none;
             font-size: 25px;
             color: white;
-            
-            span{
+
+            span {
                 display: inline-block;
                 transform: rotate(90deg);
             }
         }
 
-        input{
+        input {
             width: 333px;
             padding: 10px;
             border-radius: 50px;
@@ -49,7 +49,7 @@ header{
             position: relative;
         }
 
-        img{
+        img {
             position: absolute;
             width: 25px;
             right: 2%;
@@ -123,5 +123,67 @@ main {
         width: 50%;
         height: 100%;
         object-fit: cover;
+    }
+
+    position: relative;
+}
+
+.Ddados {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dados {
+        width: 75%;
+        background-color: #ffffff;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .dado {
+            .ft {
+                padding: 20px;
+                background-color: #FBBC13;
+                background-size: cover;
+                border-radius: 100%;
+            }
+
+            .tf {
+                background-color: #1C76C3;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            .bor {
+                border-right: 2px solid black;
+                padding-right: 20px;
+                margin-right: 20px;
+            }
+
+            .Dtext {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+
+                h1 {
+                    font-size: 32px;
+                    font-weight: 900;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
