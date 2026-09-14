@@ -33,14 +33,14 @@ header {
         color: white;
         font-size: 20px;
 
-        img{
+        img {
             position: absolute;
             left: 66.5%;
             height: 75px;
             width: 75px;
-        } 
+        }
 
-        .select{
+        .select {
             position: relative;
         }
     }
@@ -177,7 +177,7 @@ main {
     }
 }
 
-.pq{
+.pq {
     margin-top: 75px;
     width: 100%;
     text-align: center;
@@ -186,20 +186,21 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    h1{
+
+    h1 {
         width: 250px;
         font-size: 32px;
         border-bottom: 2px solid #FF0000;
     }
 
-    p{
+    p {
         font-size: 26px;
         width: 870px;
         font-weight: 700;
     }
 }
 
-.Qpq{
+.Qpq {
     width: 100%;
     display: flex;
     align-items: center;
@@ -208,7 +209,7 @@ main {
     gap: 165px;
     margin-top: 50px;
 
-    .quadrado{
+    .quadrado {
         width: 400px;
         height: 400px;
         background-color: whitesmoke;
@@ -221,47 +222,52 @@ main {
         gap: 50px;
         text-align: center;
 
-        h2{
+        h2 {
             font-size: 28px;
             font-weight: 900;
         }
 
-        p{
+        p {
             font-size: 24px;
             width: 350px;
         }
 
-        .fundo{
+        .fundo {
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100px;
             height: 100px;
-            img{
+
+            img {
                 width: 75px;
             }
         }
 
-        .b1{
+        .b1 {
             background-color: #F6BAB4;
         }
-        .b2{
+
+        .b2 {
             background-color: #C3DEA9;
         }
-        .b3{
+
+        .b3 {
             background-color: #FED978;
             width: 50px;
             padding: 50px;
         }
-        .b4{
+
+        .b4 {
             background-color: #C8DBEA;
         }
 
-        .tx1{
+        .tx1 {
             width: 250px;
         }
-        .tx2{
+
+        .tx2 {
             width: 300px;
         }
     }
