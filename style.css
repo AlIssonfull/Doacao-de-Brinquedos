@@ -33,6 +33,17 @@ header {
         color: white;
         font-size: 20px;
 
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+                color: rgb(200, 200, 200);
+                transition: 0.5s;
+            }
+        }
+
         img {
             position: absolute;
             right: 433px;
@@ -178,7 +189,7 @@ main {
 }
 
 .pq {
-    margin-top: 75px;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -298,7 +309,114 @@ main {
     }
 }
 
-.card {
+.Card {
+    margin-top: 75px;
     width: 100%;
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 75%;
+        display: flex;
+
+        .text {
+            margin-right: -55px;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            color: white;
+            padding: 20px;
+            gap: 20px;
+            background-color: #0E294D;
+            border-radius: 20px;
+            border-top-right-radius: 75px;
+            border-bottom-right-radius: 75px;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 900;
+            }
+
+            p {
+                font-size: 25px;
+                width: 430px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+                margin-left: -55px;
+            }
+
+            .doar {
+                padding: 15px;
+                background-color: #FF0000;
+                border: none;
+                color: white;
+                border-radius: 20px;
+                height: 50px;
+                font-size: larger;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: 1s;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    transform: scale(1.1);
+                    background-color: #A90202;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                    border-radius: 0px;
+                }
+            }
+
+            .func {
+                padding: 15px;
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                border-radius: 20px;
+                font-size: larger;
+                font-weight: 600;
+                transition: 1s;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    transform: scale(1.1);
+                    color: rgb(200, 200, 200);
+                    border: 2px solid rgb(200, 200, 200);
+                }
+            }
+        }
+
+        img {
+            margin-left: -10px;
+            border-radius: 20px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    margin-top: -175px;
+
+    img{
+        width: 100%;
+    }
 }
