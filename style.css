@@ -44,13 +44,17 @@ nav {
     color: white;
   }
 }
+section{
+  display: flex;
+  justify-content: space-around;
+}
 .escrita-parceiros {
   h1 {
     color: #0f0099;
     font-size: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 .parceiros {
@@ -66,8 +70,39 @@ nav {
 .card {
   display: flex;
   border-radius: 20px;
+  z-index: 1;
+  border-radius: 20px;
 }
 .fundo-card {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  left: 70px;
+  img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    filter: brightness(60%);
+  }
+}
+.fundo-card1{
+  height: 400px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    filter: brightness(60%);
+  }
+}
+.fundo-card2{
   height: 400px;
   width: 300px;
   position: relative;
@@ -76,6 +111,46 @@ nav {
   img {
     height: 500px;
     width: 300px;
+    border-radius: 20px;
+    filter: brightness(60%);
+  }
+}
+.fundo-card3{
+  height: 400px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    filter: brightness(60%);
+  }
+}
+.fundo-card4{
+  height: 400px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    filter: brightness(60%);
+  }
+}
+.fundo-card5{
+  height: 400px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
     filter: brightness(60%);
   }
 }
@@ -85,8 +160,8 @@ nav {
   justify-content: center;
   h2 {
     color: white;
-    margin-top: 400px;
-
+    margin-top: 350px;
+    
     justify-content: center;
   }
   .logo-card {
@@ -102,9 +177,92 @@ nav {
   background-color: #eff1ff;
   border-radius: 20px;
   margin-top: 120px;
+  color: #08368a;
+  height: 500px;
+  z-index: 0;
+  right: 100px;
   img {
     height: 80px;
     width: 160px;
     filter: brightness(100%);
   }
+}
+.empresa{
+  p{
+    color: rgb(2, 96, 204);
+  }
+}
+.beneficios{
+  align-items: center ;
+  h2{
+    color: black;
+  }
+  p{
+    color: black;
+  }
+}
+.saiba-mais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e61616;
+    align-items: center;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 10px
+  }
+  svg{
+    width: 30px;
+    
+  }
+  h1{
+    font-size: 15px;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+  }
+}
+.carrossel{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.carrosel:hover {
+    animation-play-state: paused;
+}
+
+.carrosel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+@keyframes deslizar{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-50% - 10px));
+    }
+}
+.barra {
+    width: 150px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresso {
+    width: 85%;
+    height: 100%;
+    background-color: #ffff00;
+    border-radius: 20px;
+}
+.tabela-ranking{
+  background-color: #eff1ff;
 }
