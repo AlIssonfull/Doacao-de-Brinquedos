@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+
 @font-face {
     font-family: 'BBH';
     src: url('font/BBHHegarty-Regular.ttf') format('truetype');
@@ -71,13 +72,13 @@ header {
     }
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 75px;
 
-    .caixa{
+    .caixa {
         position: relative;
         background-color: #F7F1E8;
         padding: 125px 50px;
@@ -88,7 +89,7 @@ main{
         border-radius: 25px;
         gap: 25px;
 
-        h1{
+        h1 {
             font-size: 45px;
             font-weight: 900;
             color: red;
@@ -97,17 +98,18 @@ main{
             font-weight: 900;
         }
 
-        p{
+        p {
             font-size: 23px;
             width: 1200px;
         }
 
-        .ondas{
+        .ondas {
             position: absolute;
             bottom: 0;
             right: 0;
         }
-        .linhaH{
+
+        .linhaH {
             position: absolute;
             bottom: 0;
             left: 400px;
@@ -115,7 +117,7 @@ main{
     }
 }
 
-.marcas{
+.marcas {
     width: 100%;
     display: flex;
     align-items: center;
@@ -124,37 +126,131 @@ main{
     padding: 0px 50px;
     background-color: #F7F1E8;
 
-    img{
+    img {
         width: 130px;
     }
 
-    .logo{
+    .logo {
         margin-top: -100px;
         width: 200px;
     }
 }
 
-.Carrossel{
+.Carrossel {
     width: 100%;
-    padding: 50px 0px;
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 150px;
+    z-index: 1;
 
-    .seta{
-        width: 50px;
-        height: 50px;
+    .seta {
         background-color: #FEFBE6;
         color: #FF0000;
         border-radius: 50px;
         font-size: 50px;
         position: relative;
+        padding: 25px;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        cursor: pointer;
 
-        p{
+        img {
             position: absolute;
-            bottom: -5px;
+            top: 18px;
+            left: 18px;
+        }
+
+        .s2 {
+            rotate: 180deg;
+            left: 22px;
+            top: 16px;
+        }
+
+    }
+
+    .cards {
+        padding: 55px;
+        position: relative;
+
+        .card {
+            background-color: rgba(200, 200, 200);
+            height: 500px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 25px;
+            padding: 10px;
+            position: relative;
+            z-index: 3;
+            border-radius: 25px;
+
+            p {
+                font-size: 22px;
+            }
+
+            .item {
+                background-image: url(img/hotB.png);
+                height: 250px;
+                width: 200px;
+                background-size: cover;
+            }
+
+            .iteml {
+                background-image: url(img/UnoB.png);
+                height: 250px;
+                width: 200px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .itemr {
+                background-image: url(img/BarbieB2.png);
+                height: 250px;
+                width: 200px;
+                background-size: cover;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                button {
+                    cursor: pointer;
+                    padding: 12px 50px;
+                    background-color: #ECD407;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .lef {
+            position: absolute;
+            top: 55px;
+            left: -125px;
+            z-index: 2;
+            background-color: rgba(222, 222, 222, 0.80);
+            transform: scale(0.75);
+        }
+
+        .rig {
+            position: absolute;
+            top: 55px;
+            right: -125px;
+            z-index: 2;
+            background-color: rgba(222, 222, 222, 0.80);
+            transform: scale(0.75)
         }
     }
 }
