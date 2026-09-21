@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+@font-face {
+    font-family: 'BBH';
+    src: url('font/BBHHegarty-Regular.ttf') format('truetype');
+}
 
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 }
 
 body {
-    background-color: #F7F1E8;
+    background-color: #ffffff;
 }
 
 header {
@@ -77,6 +81,50 @@ header {
 
         .select {
             position: relative;
+        }
+    }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px;
+
+    .caixa{
+        position: relative;
+        background-color: #F7F1E8;
+        padding: 125px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 25px;
+        gap: 25px;
+
+        h1{
+            font-size: 45px;
+            font-weight: 900;
+            color: red;
+            font-family: 'BBH Hegarty', sans-serif;
+            font-size: 75px;
+            font-weight: 900;
+        }
+
+        p{
+            font-size: 23px;
+            width: 1200px;
+        }
+
+        .ondas{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .linhaH{
+            position: absolute;
+            bottom: 0;
+            left: 400px;
         }
     }
 }
