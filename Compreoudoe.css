@@ -274,7 +274,7 @@ main {
 
     .mine {
         position: relative;
-        background-image: url(img/mineF.png);
+        background-image: url();
     }
 
     .zombie {
