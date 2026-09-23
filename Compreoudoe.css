@@ -90,6 +90,10 @@ main {
         border-radius: 25px;
         gap: 25px;
 
+        @media (max-width:1200px) {
+            width: 900px;
+        }
+
         h1 {
             font-size: 45px;
             font-weight: 900;
@@ -97,17 +101,31 @@ main {
             font-family: 'BBH Hegarty', sans-serif;
             font-size: 75px;
             font-weight: 900;
+
+            @media (max-width:1200px) {
+                font-size: 55px;
+                text-align: center;
+            }
         }
 
         p {
             font-size: 23px;
             width: 1200px;
+
+            @media (max-width:1200px) {
+                width: 800px;
+                text-align: center;
+            }
         }
 
         .ondas {
             position: absolute;
             bottom: 0;
             right: 0;
+
+            @media (max-width:1200px) {
+                width: 250px;
+            }
         }
 
         .linhaH {
@@ -129,11 +147,20 @@ main {
 
     img {
         width: 130px;
+
+        @media (max-width:1102px) {
+            width: 90px;
+        }
     }
 
     .logo {
         margin-top: -100px;
         width: 200px;
+
+        @media (max-width:1102px) {
+            width: 100px;
+            margin-top: -80px;
+        }
     }
 }
 
@@ -272,6 +299,11 @@ main {
         border-radius: 25px;
         flex-shrink: 0;
         margin-left: 25px;
+
+        @media (max-width:1100px) {
+            width: 200px;
+            height: 200px;
+        }
 
         p {
             position: absolute;
