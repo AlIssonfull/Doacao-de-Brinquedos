@@ -109,6 +109,10 @@ main {
             @media (max-width:502px) {
                 font-size: 2rem;
             }
+
+            @media (max-width:500px) {
+                width: 260px;
+            }
         }
 
         p {
@@ -118,6 +122,10 @@ main {
 
             @media (max-width:541px) {
                 width: 450px;
+            }
+
+            @media (max-width:500px) {
+                width: 300px;
             }
         }
 
@@ -165,6 +173,10 @@ main {
         @media (max-width:1430px) {
             margin-top: 100px;
         }
+
+        @media (max-width:500px) {
+            margin-top: 150px;
+        }
     }
 }
 
@@ -209,11 +221,20 @@ main {
             height: 350px;
         }
 
+        @media (max-width:500px) {
+            height: 350px;
+            width: 100%;
+        }
+
         .D1 {
             margin-left: 25px;
 
             @media (max-width:854px) {
                 margin-left: 0px;
+            }
+
+            @media (max-width:500px) {
+                height: 150px;
             }
         }
 
@@ -221,6 +242,10 @@ main {
             @media (max-width:854px) {
                 border-top: 2px solid black;
                 width: 100%;
+            }
+
+            @media (max-width:500px) {
+                height: 150px;
             }
         }
 
@@ -264,6 +289,10 @@ main {
 
                 p {
                     font-size: 22px;
+
+                    @media (max-width:387px) {
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -288,6 +317,10 @@ main {
         width: 250px;
         font-size: 32px;
         border-bottom: 2px solid #FF0000;
+
+        @media (max-width:500px) {
+            margin-top: 25px;
+        }
     }
 
     p {
@@ -305,6 +338,10 @@ main {
 
         @media (max-width:502px) {
             width: 350px;
+        }
+
+        @media (max-width:387px) {
+            width: 100%;
         }
     }
 }
@@ -332,6 +369,10 @@ main {
         gap: 50px;
         text-align: center;
 
+        @media (max-width:387px) {
+            width: 320px;
+        }
+
         .d1 {
             position: absolute;
             top: -40px;
@@ -342,12 +383,22 @@ main {
             position: absolute;
             top: -30px;
             right: -25px;
+
+            @media (max-width:445px) {
+                right: -30px;
+                top: -50px;
+            }
         }
 
         .d3 {
             position: absolute;
             bottom: -40px;
             right: -40px;
+
+            @media (max-width:445px) {
+                right: -30px;
+                bottom: -50px;
+            }
         }
 
         .d4 {
@@ -364,6 +415,10 @@ main {
         p {
             font-size: 24px;
             width: 350px;
+
+            @media (max-width:387px) {
+                width: 320px;
+            }
         }
 
         .fundo {
