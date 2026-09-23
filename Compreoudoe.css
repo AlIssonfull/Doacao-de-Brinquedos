@@ -81,7 +81,8 @@ main {
     .caixa {
         position: relative;
         background-color: #F7F1E8;
-        padding: 125px 50px;
+        width: 1300px;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -122,7 +123,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     padding: 0px 50px;
     background-color: #F7F1E8;
 
