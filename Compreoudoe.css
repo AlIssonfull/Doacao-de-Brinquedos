@@ -261,7 +261,7 @@ main {
         }
     }
 
-    .sumir{
+    .sumir {
         @media (max-width:465px) {
             display: none;
         }
@@ -294,6 +294,7 @@ main {
     justify-content: center;
     gap: 150px;
     z-index: 1;
+    height: 600px;
 
     @media (max-width:825px) {
         gap: 100px;
@@ -305,6 +306,7 @@ main {
 
     @media (max-width:500px) {
         gap: 55px;
+        height: 500px;
     }
 
     @media (max-width:455px) {
@@ -320,8 +322,8 @@ main {
         padding: 25px;
         width: 15px;
         height: 15px;
-        position: relative;
         cursor: pointer;
+        z-index: 10;
 
         @media (max-width:660px) {
             padding: 15px;
@@ -331,6 +333,7 @@ main {
             position: absolute;
             top: 18px;
             left: 18px;
+
             @media (max-width:660px) {
                 top: 7px;
                 left: 7px;
@@ -347,12 +350,13 @@ main {
                 left: 12px;
             }
         }
-
     }
 
     .cards {
         padding: 55px;
         position: relative;
+        width: 300px;
+        height: 500px;
 
         .card {
             background-color: #D9D9D9;
@@ -365,16 +369,24 @@ main {
             text-align: center;
             gap: 25px;
             padding: 10px;
-            position: relative;
+            position: absolute;
+            top: 25px;
+            left: 5px;
             z-index: 3;
             border-radius: 25px;
 
+            transition:
+                transform 0.4s ease,
+                opacity 0.4s ease;
+
             @media (max-width:825px) {
                 width: 250px;
+                left: 30px;
             }
 
             @media (max-width:625px) {
                 width: 175px;
+                left: 75px;
             }
 
             @media (max-width:500px) {
@@ -419,6 +431,7 @@ main {
                 height: 250px;
                 width: 200px;
                 background-size: cover;
+
                 @media (max-width:625px) {
                     margin-left: -55px;
                 }
@@ -451,38 +464,39 @@ main {
             }
         }
 
+
         .lef {
-            position: absolute;
-            top: 55px;
-            left: -125px;
-            z-index: 2;
             background-color: #ABABAB;
-            transform: scale(0.75);
+            transform: translateX(-125px) scale(0.75);
+            z-index: 2;
 
             @media (max-width:625px) {
-                left: -75px;
+                transform: translateX(-75px) scale(0.75);
             }
 
             @media (max-width:455px) {
-                left: -45px;
+                transform: translateX(-45px) scale(0.75);
             }
         }
 
         .rig {
-            position: absolute;
-            top: 55px;
-            right: -125px;
-            z-index: 2;
             background-color: #ABABAB;
-            transform: scale(0.75);
+            transform: translateX(125px) scale(0.75);
+            z-index: 2;
 
             @media (max-width:625px) {
-                right: -75px;
+                transform: translateX(75px) scale(0.75);
             }
 
             @media (max-width:455px) {
-                right: -45px;
+                transform: translateX(45px) scale(0.75);
             }
+        }
+
+        .centro {
+            transform: translateX(0) scale(1);
+            z-index: 3;
+            opacity: 1;
         }
     }
 }
