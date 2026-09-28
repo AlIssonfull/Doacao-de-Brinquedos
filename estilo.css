@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -28,54 +27,102 @@ a {
 header {
     background-color: #E61616;
     width: 100%;
-    padding: 0px 25px 0px 25px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .menu {
-        display: flex;
-        display: none;
-        cursor: pointer;
-
-        @media (max-width:845px) {
-            display: block;
-        }
-
-        img {
-            width: 50px;
-        }
-    }
+    position: relative;
 
     img {
         width: 100px;
         padding: 10px;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-        margin-right: 50px;
-        color: white;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 25px;
+    .menu {
+        display: none;
+        cursor: pointer;
 
-        @media (max-width:845px) {
+        img {
+            width: 30px;
+            padding: 0;
+        }
+
+        .mn {
             display: none;
         }
 
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.5s;
+        @media (max-width: 845px) {
+            display: block;
+        }
+    }
 
-            &:hover {
-                font-size: 22px;
-                transition: 0.5s;
+    .nav {
+        display: block;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-right: 50px;
+            color: white;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                color: white;
+                transition: 0.3s;
+
+                &:hover {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 845px) {
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #E61616;
+            z-index: 10;
+            padding: 10px 0;
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                gap: 15px;
+                background-color: transparent;
+                border-radius: 0;
+                padding: 10px;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &.menu-open {
+            .nav {
+                display: block;
+            }
+
+            #menu {
+                display: none;
+            }
+
+            #menuC {
+                display: block;
             }
         }
     }
@@ -84,7 +131,7 @@ header {
 .hero {
     min-height: 520px;
 
-    background-image: url("foto-criancas.png");
+    background-image: url("img/foto-criancas.png");
     background-size: cover;
     background-position: center;
 
@@ -100,12 +147,10 @@ header {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.05)
-    );
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.05));
 }
 
 .hero-conteudo {
@@ -157,9 +202,6 @@ header {
     font-weight: 500;
 }
 
-
-
-
 .campanha,
 .missao {
     max-width: 1200px;
@@ -185,9 +227,6 @@ header {
     padding-left: max(50px, calc((100% - 1100px) / 2));
     padding-right: max(50px, calc((100% - 1100px) / 2));
 }
-
-
-
 
 .mini-titulo {
     display: block;
@@ -223,9 +262,6 @@ header {
     color: #222;
 }
 
-
-
-
 .imagem {
     position: relative;
 }
@@ -237,9 +273,6 @@ header {
 
     border-radius: 20px;
 }
-
-
-
 
 .imagem-texto {
     position: absolute;
@@ -257,9 +290,6 @@ header {
 
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 .botao {
     display: inline-flex;
@@ -298,8 +328,6 @@ header {
     transform: translateY(-2px);
 }
 
-
-
 .impacto {
     padding: 50px 30px;
 
@@ -308,7 +336,7 @@ header {
     background: white;
 }
 
-.impacto > .mini-titulo {
+.impacto>.mini-titulo {
     font-size: 11px;
 
     margin-bottom: 30px;
@@ -362,9 +390,6 @@ header {
     font-weight: 600;
 }
 
-
-
-
 .final {
     background: #df0000;
 
@@ -387,7 +412,7 @@ header {
     color: white;
 }
 
-.final-texto > span {
+.final-texto>span {
     font-size: 10px;
 
     font-weight: 800;
@@ -413,8 +438,6 @@ header {
     font-weight: 500;
 }
 
-
-
 .botao-branco {
     background: white;
 
@@ -426,9 +449,6 @@ header {
 .botao-branco:hover {
     background: #eeeeee;
 }
-
-
-
 
 .final-imagem {
     display: flex;
@@ -446,13 +466,7 @@ header {
     object-fit: contain;
 }
 
-
-
-
-
-
 @media (max-width: 800px) {
-
     .hero {
         min-height: 480px;
     }
@@ -477,13 +491,7 @@ header {
     }
 }
 
-
-
-
 @media (max-width: 600px) {
-
-   
-
     .hero {
         min-height: 600px;
 
@@ -505,9 +513,6 @@ header {
     .hero p {
         font-size: 11px;
     }
-
-
-   
 
     .campanha,
     .missao {
@@ -544,9 +549,6 @@ header {
         height: 230px;
     }
 
-
-
-
     .impacto {
         padding: 45px 20px;
     }
@@ -581,8 +583,6 @@ header {
         font-size: 32px;
     }
 
-
-
     .final {
 
         grid-template-columns: 1fr;
@@ -609,9 +609,6 @@ header {
     }
 
 }
-
-
-
 
 @media (max-width: 380px) {
 
