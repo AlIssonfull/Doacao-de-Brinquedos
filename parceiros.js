@@ -25,20 +25,16 @@ let atual = 0;
 function atualizarCarrossel() {
 
     cards.forEach(card => {
-
         card.classList.remove(
             "destaque",
             "esquerda",
             "direita"
         );
-
     });
-
 
     // CARD DO MEIO
 
     cards[atual].classList.add("destaque");
-
 
     // CARD DA ESQUERDA
 
@@ -56,11 +52,9 @@ function atualizarCarrossel() {
     cards[direita].classList.add("direita");
 }
 
-
 // PASSAR PARA O PRÓXIMO
 
 function proximo() {
-
     atual++;
 
     if (atual >= cards.length) {
@@ -70,15 +64,12 @@ function proximo() {
     atualizarCarrossel();
 }
 
-
 // CARROSSEL AUTOMÁTICO
 
 setInterval(() => {
-
     proximo();
 
 }, 3000);
-
 
 // INICIAR
 

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
   background-color: #e61616;
   width: 100%;
@@ -15,6 +16,7 @@ header {
   @media (max-width: 845px) {
     width: 100%;
   }
+
   .menu {
     display: flex;
     display: none;
@@ -62,10 +64,12 @@ header {
     }
   }
 }
+
 nav {
   display: flex;
   object-fit: cover;
   position: relative;
+
   img {
     height: 400px;
     width: 100%;
@@ -78,23 +82,28 @@ nav {
     }
   }
 }
+
 .escrita-nav {
   position: absolute;
   margin-top: 150px;
   margin-left: 70px;
+
   h1 {
     color: #e61616;
     width: 435px;
   }
+
   p {
     font-size: 20px;
     margin-top: 10px;
     color: white;
   }
 }
+
 section {
   display: flex;
   justify-content: space-around;
+
   @media (max-width: 845px) {
     display: flex;
     width: 100%;
@@ -103,6 +112,7 @@ section {
     align-items: center;
   }
 }
+
 .escrita-parceiros {
   h1 {
     color: #0f0099;
@@ -111,6 +121,7 @@ section {
     justify-content: center;
     margin-top: 30px;
   }
+
   @media (max-width: 845px) {
     h1 {
       font-size: 50px;
@@ -120,12 +131,14 @@ section {
     }
   }
 }
+
 .img-parceiros {
   @media (max-width: 845px) {
     display: flex;
     width: 100%;
   }
 }
+
 .container-img {
   @media (max-width: 845px) {
     display: flex;
@@ -155,6 +168,7 @@ section {
     }
   }
 }
+
 .parceiros {
   img {
     height: 80px;
@@ -171,6 +185,7 @@ section {
   z-index: 1;
   border-radius: 20px;
 }
+
 .fundo-card {
   height: 400px;
   width: 300px;
@@ -179,6 +194,7 @@ section {
   justify-content: center;
   z-index: 2;
   left: 70px;
+
   img {
     height: 500px;
     width: 300px;
@@ -191,6 +207,7 @@ section {
   position: absolute;
   display: flex;
   justify-content: center;
+
   h2 {
     color: white;
     margin-top: 350px;
@@ -198,6 +215,7 @@ section {
     font-size: 21px;
     justify-content: center;
   }
+
   .logo-card {
     width: 150px;
     height: 100px;
@@ -206,58 +224,70 @@ section {
     filter: brightness(100%);
   }
 }
+
 .parceiro-destaque {
   width: 550px;
   background-color: #eff1ff;
   border-radius: 20px;
   color: #08368a;
   height: 530px;
+
   img {
     height: 80px;
     width: 160px;
     filter: brightness(100%);
   }
+
   @media (max-width: 845px) {
     width: 450px;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
   }
 }
+
 .info-parceiros {
   margin-left: 20px;
   margin-top: 20px;
 }
+
 .empresa {
   p {
     color: rgb(0, 0, 0);
     margin-top: 5px;
   }
+
   h2 {
     width: 290px;
     font-size: 20px;
   }
 }
+
 .beneficios {
   margin-top: 5px;
+
   svg {
     color: rgb(2, 96, 204);
     width: 50px;
     margin-right: 10px;
   }
+
   h2 {
     color: black;
   }
+
   p {
     color: black;
   }
 }
+
 .saiba-mais {
   display: flex;
   align-items: center;
   justify-content: center;
+
   button {
     display: flex;
     justify-content: space-between;
@@ -267,11 +297,13 @@ section {
     border: 1px solid white;
     border-radius: 10px;
   }
+
   svg {
     width: 30px;
     color: white;
     margin-right: 10px;
   }
+
   h1 {
     font-size: 15px;
     align-items: center;
@@ -288,6 +320,7 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
+
   @media (max-width: 845px) {
     width: 115px;
   }
@@ -298,23 +331,28 @@ section {
   height: 100%;
   background-color: #ffff00;
   border-radius: 20px;
+
   @media (max-width: 845px) {
     display: flex;
     align-items: center;
   }
 }
+
 .tabela-ranking {
   background-color: #eff1ff;
   width: 800px;
   border-radius: 20px;
+
   @media (max-width: 845px) {
     display: flex;
     width: 80%;
-  
+
   }
 }
+
 .itens-ranking {
   margin-left: 30px;
+
   @media (max-width: 845px) {
     display: flex;
     align-items: center;
@@ -322,14 +360,17 @@ section {
     gap: 20px;
   }
 }
+
 .ranking-itens {
   display: flex;
   justify-content: space-around;
+
   @media (max-width: 845px) {
     display: flex;
     align-items: center;
   }
 }
+
 .parceiros-ranking {
   display: flex;
   align-items: center;
@@ -338,41 +379,51 @@ section {
   border-radius: 10px;
   border: 1px solid black;
   margin-top: 5px;
+
   p {
     font-size: 17px;
     color: #08368a;
   }
+
   img {
     width: 200px;
     height: 110px;
     object-fit: contain;
   }
+
   h1 {
     font-size: 20px;
   }
+
   @media (max-width: 845px) {
     display: none;
   }
 }
+
 .pontos {
   margin-left: 140px;
+
   path {
     width: 20px;
   }
+
   @media (max-width: 845px) {
     margin-left: 0px;
   }
 }
+
 .escrita-ranking {
   color: #001ea1;
   display: flex;
   justify-content: center;
   font-size: 40px;
 }
+
 .info-ranking {
   display: flex;
   align-items: center;
 }
+
 .parceiros-ranking1 {
   display: flex;
   align-items: center;
@@ -382,17 +433,21 @@ section {
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
+
   img {
     width: 180px;
     height: 110px;
     object-fit: contain;
   }
+
   h1 {
     font-size: 20px;
   }
+
   p {
     font-size: 17px;
     color: #08368a;
+
     span {
       color: #e61616;
     }
@@ -403,22 +458,27 @@ section {
     width: 150px;
     justify-content: center;
     flex-direction: column;
+
     .pontos {
       margin-left: 5px;
     }
+
     P {
       display: none;
     }
+
     img {
       object-fit: contain;
       width: 100px;
     }
+
     h1 {
       font-size: 20px;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
   }
 }
+
 .parceiros-ranking2 {
   display: flex;
   align-items: center;
@@ -428,18 +488,22 @@ section {
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
+
   img {
     width: 230px;
     height: 110px;
     object-fit: contain;
   }
+
   h1 {
     font-size: 20px;
   }
+
   p {
     font-size: 17px;
     color: #08368a;
   }
+
   @media (max-width: 845px) {
     display: flex;
     width: 150px;
@@ -448,16 +512,19 @@ section {
     P {
       display: none;
     }
+
     img {
       object-fit: contain;
       width: 100px;
     }
+
     h1 {
       font-size: 20px;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
   }
 }
+
 .parceiros-ranking3 {
   display: flex;
   align-items: center;
@@ -467,44 +534,54 @@ section {
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
+
   img {
     width: 230px;
     height: 110px;
     object-fit: contain;
   }
+
   h1 {
     font-size: 20px;
   }
+
   p {
     font-size: 15px;
     color: #08368a;
   }
+
   @media (max-width: 845px) {
     display: flex;
     width: 150px;
     flex-direction: column;
+
     P {
       display: none;
     }
+
     img {
       object-fit: contain;
       width: 100px;
     }
   }
+
   h1 {
     font-size: 20px;
   }
 }
+
 .ranking-de-parceiros {
   margin-top: 50px;
   color: #000000;
   margin-right: 25px;
+
   @media (max-width: 845px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 .barra1 {
   width: 150px;
   height: 12px;
@@ -512,6 +589,7 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
+
   @media (max-width: 845px) {
     width: 115px;
   }
@@ -523,6 +601,7 @@ section {
   background-color: #9d9d9d;
   border-radius: 20px;
 }
+
 .barra2 {
   width: 150px;
   height: 12px;
@@ -530,6 +609,7 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
+
   @media (max-width: 845px) {
     width: 115px;
   }
@@ -541,6 +621,7 @@ section {
   background-color: #fab638;
   border-radius: 20px;
 }
+
 .carrossel {
   height: 500px;
   width: 100%;
@@ -551,8 +632,9 @@ section {
   perspective: 1200px;
   overflow: hidden;
   margin-top: 50px;
+
   @media (max-width: 845px) {
-  margin-right: 110px;
+    margin-right: 110px;
   }
 
 }
@@ -576,7 +658,7 @@ section {
   overflow: hidden;
 }
 
-.carrossel .fundo-card > img {
+.carrossel .fundo-card>img {
   width: 300px;
   height: 400px;
   object-fit: cover;
@@ -605,10 +687,12 @@ section {
   opacity: 0.7;
   z-index: 2;
 }
+
 .img-lateral {
   width: 300px;
   object-fit: cover;
   height: 200px;
+
   img {
     width: 200px;
     height: 150px;
@@ -616,15 +700,18 @@ section {
     object-fit: contain;
     transform: rotateZ(-35deg);
   }
+
   @media (max-width: 845px) {
     display: none;
   }
 }
+
 .img-lateral2 {
   width: 300px;
   object-fit: cover;
   height: 200px;
   margin-left: 50px;
+
   img {
     width: 200px;
     height: 150px;
@@ -632,17 +719,21 @@ section {
     margin-top: 50px;
     transform: rotatez(35deg);
   }
+
   @media (max-width: 845px) {
     display: none;
   }
 }
+
 .logo-p {
   img {
     object-fit: contain;
   }
+
   h1 {
     color: #e61616;
   }
+
   span {
     color: #08368a;
   }
