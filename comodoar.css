@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Capriola', sans-serif;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #E61616;
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+        cursor: pointer;
+
+        img {
+            width: 30px;
+            padding: 0;
+        }
+
+        .mn {
+            display: none;
+        }
+
+        @media (max-width: 845px) {
+            display: block;
+        }
+    }
+
+    .nav {
+        display: block;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-right: 50px;
+            color: white;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                color: white;
+                transition: 0.3s;
+
+                &:hover {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 845px) {
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #E61616;
+            z-index: 10;
+            padding: 10px 0;
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                gap: 15px;
+                background-color: transparent;
+                border-radius: 0;
+                padding: 10px;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &.menu-open {
+            .nav {
+                display: block;
+            }
+
+            #menu {
+                display: none;
+            }
+
+            #menuC {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 526px;
+    background-color: #FFEFB0;
+    position: relative;
+
+    .estrelahero {
+        position: absolute;
+        left: 550px;
+    }
+
+    .tresfaixa {
+        position: absolute;
+        left: 780px;
+        top: 320px;
+    }
+
+    .cobrinha {
+        position: absolute;
+        left: 380px;
+        top: 473px;
+    }
+
+    .vermelho {
+        position: absolute;
+        right: 1px;
+    }
+
+    .caixa {
+        position: absolute;
+        right: 5px;
+        z-index: 2;
+
+        margin-top: 80px;
+    }
+
+    .herotxt {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 70px;
+        margin-top: 80px;
+
+
+        .titulo {
+            font-family: 'BBH Hegarty', sans-serif;
+            font-size: 82px;
+            font-weight: 900;
+            color: #E61616;
+            line-height: 1;
+        }
+
+        .subtitulo {
+            width: 320px;
+            font-size: 25px;
+
+        }
+
+        .sub {
+            width: 300px;
+            color: rgb(84, 85, 85);
+        }
+
+
+    }
+}
+
+.passoapasso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    gap: 12px;
+
+    .linhaesquerda {
+        display: flex;
+    }
+
+    .txt {
+        display: flex;
+        font-family: 'BBH Hegarty', sans-serif;
+        font-weight: 900;
+        color: #E61616;
+        line-height: 1;
+        font-size: 33px;
+    }
+
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
+    .carde {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+        height: 300px;
+        background-color: #FFEFB0;
+        border-radius: 16px;
+        gap: 22px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.7s;
+
+        &:hover {
+            transition: 0.7s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 360px;
+            height: 330px;
+        }
+    }
+
+
+
+    h2 {
+        color: #E61616;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 20px;
+        color: rgb(80, 80, 80);
+        width: 220px;
+    }
+
+    .bola {
+        margin-top: -32px;
+        z-index: 2;
+        position: relative;
+    }
+
+    h3 {
+        font-size: 33px;
+        color: aliceblue;
+        top: 26px;
+        left: 45px;
+        position: absolute;
+    }
+}
+
+.Manifesto {
+    display: flex;
+    width: 1450px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 400px;
+    background-color: #FFEFB0;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    h1 {
+        font-family: 'BBH Hegarty', sans-serif;
+        font-weight: 900;
+        color: #E61616;
+        line-height: 1;
+        font-size: 75px;
+    }
+
+    .mani {
+        display: flex;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .da {
+        display: flex;
+        position: absolute;
+        margin-left: 530px;
+        margin-top: 30px;
+    }
+
+    .jornada {
+        display: flex;
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 120px;
+    }
+
+    .nossa {
+        display: flex;
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 120px;
+    }
+
+    .estrelavermelha {
+        position: absolute;
+        margin-left: 730px;
+        margin-top: 25px;
+
+        img {
+            width: 110%;
+        }
+
+    }
+
+    .heromanifesto {
+        position: absolute;
+        margin-left: 920px;
+
+        img {
+            width: 93%;
+            border-bottom-right-radius: 21px;
+            border-top-right-radius: 21px;
+        }
+    }
+
+    .caixa {
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 50px;
+        width: 750px;
+        height: 100px;
+        background-color: #EFE9BB;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+        p {
+            font-size: 20px;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.caixabarbi {
+    display: flex;
+    width: 1400px;
+    margin-left: 50px;
+    margin-top: 150px;
+    height: 300px;
+    border-radius: 17px;
+    background-color: #FFEFB0;
+
+    .linhaa {
+        position: absolute;
+        margin-top: 247px;
+        margin-left: 60px;
+    }
+
+    .barbicentral {
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -90px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .oculos {
+        position: absolute;
+        margin-left: 330px;
+        margin-top: 52px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .style {
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 50px;
+    }
+
+    .barbi {
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 85px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .styletxt {
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 180px;
+        width: 700px;
+    }
+
+    .treslinhascardbarbi {
+        position: absolute;
+        margin-left: 1310px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    header {
+        padding: 0 10px;
+
+        img {
+            width: 80px;
+        }
+
+        .menu {
+            display: block;
+
+            img {
+                width: 45px;
+            }
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    .hero {
+        height: 500px;
+
+        .estrelahero {
+            left: 370px;
+            top: 30px;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .tresfaixa {
+            left: 250px;
+            top: 500px;
+
+            img {
+                width: 2px;
+            }
+        }
+
+        .cobrinha {
+            left: 20px;
+            top: 470px;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .vermelho {
+            display: none;
+        }
+
+        .caixa {
+            right: -20px;
+            top: 202px;
+
+            img {
+                width: 350px;
+            }
+        }
+
+        .herotxt {
+            margin-left: 25px;
+            margin-top: 50px;
+            gap: 20px;
+
+            .titulo {
+                font-size: 55px;
+            }
+
+            .subtitulo {
+                width: 280px;
+                font-size: 20px;
+            }
+
+            .sub {
+                width: 270px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .passoapasso {
+        margin-top: 30px;
+
+        .linhaesquerda,
+        img {
+            max-width: 80px;
+        }
+
+        .txt {
+            font-size: 27px;
+        }
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+
+        .carde {
+            width: 250px;
+            height: 240px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            &:hover {
+                width: 270px;
+                height: 260px;
+            }
+        }
+    }
+
+    .Manifesto {
+        width: calc(100% - 30px);
+        height: 650px;
+        margin: 50px 15px 0;
+
+        h1 {
+            font-size: 45px;
+        }
+
+        .mani {
+            margin-left: 25px;
+            margin-top: 30px;
+        }
+
+        .da {
+            margin-left: 319px;
+            margin-top: 30px;
+        }
+
+        .nossa {
+            margin-left: 25px;
+            margin-top: 100px;
+        }
+
+        .jornada {
+            margin-left: 190px;
+            margin-top: 100px;
+        }
+
+        .estrelavermelha {
+            margin-left: 30px;
+            margin-top: 160px;
+
+            img {
+                width: 80px;
+            }
+        }
+
+        .heromanifesto {
+            margin-left: 20px;
+            margin-top: 170px;
+
+            img {
+                width: 360px;
+                border-radius: 20px 20px 20px 20px;
+            }
+        }
+
+        .caixa {
+            margin-left: 22px;
+            margin-top: 460px;
+            width: 350px;
+            height: 150px;
+
+            p {
+                font-size: 14px;
+                width: 310px;
+            }
+        }
+    }
+
+    .caixabarbi {
+        width: calc(100% - 30px);
+        height: 600px;
+        margin: 100px 15px 0;
+
+        .linhaa {
+            margin-left: 300px;
+            margin-top: 560px;
+
+            img {
+                width: 80px;
+            }
+        }
+
+        .barbicentral {
+            margin-left: 35px;
+            margin-top: -80px;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        .oculos {
+            margin-left: 250px;
+            margin-top: 120px;
+
+            img {
+                width: 0px;
+            }
+        }
+
+        .style {
+            margin-left: 25px;
+            margin-top: 350px;
+        }
+
+        .barbi {
+            margin-left: 25px;
+            margin-top: 380px;
+
+            img {
+                width: 180px;
+            }
+        }
+
+        .styletxt {
+            margin-left: 25px;
+            margin-top: 470px;
+            width: 300px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .treslinhascardbarbi {
+            display: none;
+        }
+    }
+}
