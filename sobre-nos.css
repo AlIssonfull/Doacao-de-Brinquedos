@@ -632,3 +632,14 @@ header {
     }
 
 }
+
+.parceiros{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+    a{
+        text-decoration: underline;
+        color: black;
+    }
+}
