@@ -38,12 +38,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 28px;
     margin-right: 50px;
     color: white;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 8px;
     border-radius: 25px;
 
     @media (max-width: 845px) {
@@ -112,11 +112,12 @@ section {
     margin-top: 30px;
   }
   @media (max-width: 845px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 280px;
-    width: 400px;
+    h1 {
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
   }
 }
 .img-parceiros {
@@ -124,30 +125,35 @@ section {
     display: flex;
     width: 100%;
   }
-  
 }
 .container-img {
-  @media(max-width: 845px) {
+  @media (max-width: 845px) {
     display: flex;
     width: 100%;
-     overflow: scroll;
-     animation: deslizar 5s linear infinite;
-     :-webkit-scrollbar {
-      display: none;
-     }
+    overflow: hidden;
 
-  }
-  @keyframes deslizar {
-    from{
-      transform: translateX(0);
-
+    .lista-parceiros {
+      width: max-content;
+      display: flex;
+      animation: deslizar 15s linear infinite;
     }
-    to{
-      transform: translateX(calc(-100%));
-  }
-}
 
- 
+    .parceiros {
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+    }
+
+    @keyframes deslizar {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
 .parceiros {
   img {
@@ -213,10 +219,11 @@ section {
   }
   @media (max-width: 845px) {
     width: 450px;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
   }
 }
 .info-parceiros {
@@ -281,7 +288,9 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
-  margin-right: 120px;
+  @media (max-width: 845px) {
+    width: 115px;
+  }
 }
 
 .progresso {
@@ -289,7 +298,7 @@ section {
   height: 100%;
   background-color: #ffff00;
   border-radius: 20px;
-  @media(max-width: 845px) {
+  @media (max-width: 845px) {
     display: flex;
     align-items: center;
   }
@@ -298,20 +307,25 @@ section {
   background-color: #eff1ff;
   width: 800px;
   border-radius: 20px;
-  @media(max-width: 845px) {
+  @media (max-width: 845px) {
     display: flex;
+    width: 80%;
+  
   }
 }
 .itens-ranking {
-  
-  align-items: center;
   margin-left: 30px;
-  
+  @media (max-width: 845px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 .ranking-itens {
   display: flex;
   justify-content: space-around;
-  @media(max-width: 845px) {
+  @media (max-width: 845px) {
     display: flex;
     align-items: center;
   }
@@ -320,15 +334,16 @@ section {
   display: flex;
   align-items: center;
   width: 700px;
-  margin-left: 10px;
-  border-radius: 20px;
+  justify-content: center;
+  border-radius: 10px;
   border: 1px solid black;
   margin-top: 5px;
   p {
     font-size: 17px;
+    color: #08368a;
   }
   img {
-    width: 230px;
+    width: 200px;
     height: 110px;
     object-fit: contain;
   }
@@ -336,12 +351,17 @@ section {
     font-size: 20px;
   }
   @media (max-width: 845px) {
-    display: none
+    display: none;
   }
-
 }
 .pontos {
   margin-left: 140px;
+  path {
+    width: 20px;
+  }
+  @media (max-width: 845px) {
+    margin-left: 0px;
+  }
 }
 .escrita-ranking {
   color: #001ea1;
@@ -350,7 +370,7 @@ section {
   font-size: 40px;
 }
 .info-ranking {
-  margin-left: 20px;
+  display: flex;
   align-items: center;
 }
 .parceiros-ranking1 {
@@ -358,12 +378,12 @@ section {
   align-items: center;
   background-color: #f8f882;
   width: 700px;
-  margin-left: 10px;
+  justify-content: center;
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
   img {
-    width: 230px;
+    width: 180px;
     height: 110px;
     object-fit: contain;
   }
@@ -372,26 +392,39 @@ section {
   }
   p {
     font-size: 17px;
+    color: #08368a;
+    span {
+      color: #e61616;
+    }
   }
-@media(max-width: 845px) {
+
+  @media (max-width: 845px) {
     display: flex;
-    width: 300px;
+    width: 150px;
+    justify-content: center;
     flex-direction: column;
-    P{
+    .pontos {
+      margin-left: 5px;
+    }
+    P {
       display: none;
     }
-    img{
+    img {
       object-fit: contain;
       width: 100px;
+    }
+    h1 {
+      font-size: 20px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
   }
 }
 .parceiros-ranking2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #f1f1e8;
   width: 700px;
-  margin-left: 10px;
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
@@ -405,27 +438,32 @@ section {
   }
   p {
     font-size: 17px;
+    color: #08368a;
   }
-  @media(max-width: 845px) {
+  @media (max-width: 845px) {
     display: flex;
-    width: 300px;
+    width: 150px;
     flex-direction: column;
-    P{
+
+    P {
       display: none;
     }
-    img{
+    img {
       object-fit: contain;
       width: 100px;
     }
+    h1 {
+      font-size: 20px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
   }
-
 }
 .parceiros-ranking3 {
   display: flex;
   align-items: center;
   background-color: #fea202;
   width: 700px;
-  margin-left: 10px;
+  justify-content: center;
   border-radius: 10px;
   margin-top: 5px;
   border: 1px solid black;
@@ -438,28 +476,29 @@ section {
     font-size: 20px;
   }
   p {
-    font-size: 17px;
-  }@media(max-width: 845px) {
+    font-size: 15px;
+    color: #08368a;
+  }
+  @media (max-width: 845px) {
     display: flex;
-    width: 300px;
+    width: 150px;
     flex-direction: column;
-    P{
+    P {
       display: none;
     }
-    img{
+    img {
       object-fit: contain;
       width: 100px;
     }
   }
-  h1{
+  h1 {
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
   }
-
 }
 .ranking-de-parceiros {
   margin-top: 50px;
   color: #000000;
+  margin-right: 25px;
   @media (max-width: 845px) {
     display: flex;
     justify-content: center;
@@ -473,7 +512,9 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
-  margin-right: 120px;
+  @media (max-width: 845px) {
+    width: 115px;
+  }
 }
 
 .progresso1 {
@@ -489,7 +530,9 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
-  margin-right: 120px;
+  @media (max-width: 845px) {
+    width: 115px;
+  }
 }
 
 .progresso2 {
@@ -497,7 +540,6 @@ section {
   height: 100%;
   background-color: #fab638;
   border-radius: 20px;
-
 }
 .carrossel {
   height: 500px;
@@ -509,6 +551,10 @@ section {
   perspective: 1200px;
   overflow: hidden;
   margin-top: 50px;
+  @media (max-width: 845px) {
+  margin-right: 110px;
+  }
+
 }
 
 .carrossel .card {
@@ -567,7 +613,8 @@ section {
     width: 200px;
     height: 150px;
     margin-top: 50px;
-    transform: rotateZ(-20deg);
+    object-fit: contain;
+    transform: rotateZ(-35deg);
   }
   @media (max-width: 845px) {
     display: none;
@@ -581,8 +628,9 @@ section {
   img {
     width: 200px;
     height: 150px;
+    object-fit: contain;
     margin-top: 50px;
-    transform: rotatez(25deg);
+    transform: rotatez(35deg);
   }
   @media (max-width: 845px) {
     display: none;
@@ -595,7 +643,7 @@ section {
   h1 {
     color: #e61616;
   }
-  span{
+  span {
     color: #08368a;
   }
 }
