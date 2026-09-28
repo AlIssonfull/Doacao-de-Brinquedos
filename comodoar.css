@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -8,111 +7,154 @@
     font-family: 'Capriola', sans-serif;
 }
 
-
 body {
     background-color: white;
     overflow-x: hidden;
 }
 
-
-
-
 header {
     background-color: #E61616;
     width: 100%;
-    padding: 0px 25px 0px 25px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .menu {
-        display: flex;
-        display: none;
-        cursor: pointer;
-
-        @media (max-width:845px) {
-            display: block;
-        }
-
-        img {
-            width: 50px;
-        }
-    }
+    position: relative;
 
     img {
         width: 100px;
         padding: 10px;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-        margin-right: 50px;
-        color: white;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 25px;
+    .menu {
+        display: none;
+        cursor: pointer;
 
-        @media (max-width:845px) {
+        img {
+            width: 30px;
+            padding: 0;
+        }
+
+        .mn {
             display: none;
         }
 
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.5s;
-            font-family: "Fredoka", sans-serif;
-            font-weight: 600;
+        @media (max-width: 845px) {
+            display: block;
+        }
+    }
 
-            &:hover {
-                font-size: 22px;
-                transition: 0.5s;
+    .nav {
+        display: block;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-right: 50px;
+            color: white;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                color: white;
+                transition: 0.3s;
+
+                &:hover {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 845px) {
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #E61616;
+            z-index: 10;
+            padding: 10px 0;
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                gap: 15px;
+                background-color: transparent;
+                border-radius: 0;
+                padding: 10px;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &.menu-open {
+            .nav {
+                display: block;
+            }
+
+            #menu {
+                display: none;
+            }
+
+            #menuC {
+                display: block;
             }
         }
     }
 }
 
 
-.hero{
+.hero {
     display: flex;
     width: 100%;
     height: 526px;
     background-color: #FFEFB0;
     position: relative;
 
-    .estrelahero{
+    .estrelahero {
         position: absolute;
         left: 550px;
     }
 
-    .tresfaixa{
+    .tresfaixa {
         position: absolute;
         left: 780px;
         top: 320px;
     }
 
-    .cobrinha{
+    .cobrinha {
         position: absolute;
         left: 380px;
         top: 473px;
     }
 
-    .vermelho{
+    .vermelho {
         position: absolute;
         right: 1px;
     }
-    .caixa{
+
+    .caixa {
         position: absolute;
         right: 5px;
         z-index: 2;
-        
+
         margin-top: 80px;
     }
 
-    .herotxt{
+    .herotxt {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -120,59 +162,59 @@ header {
         margin-top: 80px;
 
 
-    .titulo {
-     font-family: 'BBH Hegarty', sans-serif;
-     font-size: 82px;
-     font-weight: 900;
-     color: #E61616;
-      line-height: 1;
-    }
+        .titulo {
+            font-family: 'BBH Hegarty', sans-serif;
+            font-size: 82px;
+            font-weight: 900;
+            color: #E61616;
+            line-height: 1;
+        }
 
-    .subtitulo{
-        width: 320px;
-        font-size: 25px;
+        .subtitulo {
+            width: 320px;
+            font-size: 25px;
 
-    }
+        }
 
-    .sub{
-        width: 300px;
-        color: rgb(84, 85, 85);
-    }
+        .sub {
+            width: 300px;
+            color: rgb(84, 85, 85);
+        }
 
 
     }
 }
 
-.passoapasso{
+.passoapasso {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 13px;
     gap: 12px;
 
-.linhaesquerda{
-    display: flex;
+    .linhaesquerda {
+        display: flex;
+    }
+
+    .txt {
+        display: flex;
+        font-family: 'BBH Hegarty', sans-serif;
+        font-weight: 900;
+        color: #E61616;
+        line-height: 1;
+        font-size: 33px;
+    }
+
 }
 
-.txt{
-    display: flex;
-    font-family: 'BBH Hegarty', sans-serif;
-    font-weight: 900;
-    color: #E61616;
-    line-height: 1;
-    font-size: 33px;
-}
-
-}
-
-.cards{
+.cards {
     display: flex;
     gap: 40px;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
 
-    .carde{
+    .carde {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -185,35 +227,35 @@ header {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: 0.7s;
 
-    &:hover{
-        transition: 0.7s;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        width: 360px;
-        height: 330px;
+        &:hover {
+            transition: 0.7s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 360px;
+            height: 330px;
+        }
     }
-    }
 
 
 
-    h2{
+    h2 {
         color: #E61616;
         font-weight: bold;
         font-size: 26px;
     }
 
-    p{
+    p {
         font-size: 20px;
         color: rgb(80, 80, 80);
         width: 220px;
     }
 
-    .bola{
+    .bola {
         margin-top: -32px;
         z-index: 2;
         position: relative;
     }
 
-    h3{
+    h3 {
         font-size: 33px;
         color: aliceblue;
         top: 26px;
@@ -222,7 +264,7 @@ header {
     }
 }
 
-.Manifesto{
+.Manifesto {
     display: flex;
     width: 1450px;
     border-radius: 20px;
@@ -233,62 +275,64 @@ header {
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    h1{
-    font-family: 'BBH Hegarty', sans-serif;
-    font-weight: 900;
-    color: #E61616;
-    line-height: 1;
-    font-size: 75px;
+    h1 {
+        font-family: 'BBH Hegarty', sans-serif;
+        font-weight: 900;
+        color: #E61616;
+        line-height: 1;
+        font-size: 75px;
     }
 
-    .mani{
+    .mani {
         display: flex;
         margin-left: 50px;
         margin-top: 30px;
     }
 
-    .da{
+    .da {
         display: flex;
         position: absolute;
         margin-left: 530px;
         margin-top: 30px;
     }
 
-    .jornada{
+    .jornada {
         display: flex;
         position: absolute;
         margin-left: 400px;
         margin-top: 120px;
     }
 
-    .nossa{
+    .nossa {
         display: flex;
         position: absolute;
         margin-left: 90px;
         margin-top: 120px;
     }
 
-    .estrelavermelha{
+    .estrelavermelha {
         position: absolute;
-        margin-left: 730px;   
-        margin-top: 25px;  
-        img{
+        margin-left: 730px;
+        margin-top: 25px;
+
+        img {
             width: 110%;
         }
 
     }
 
-    .heromanifesto{
+    .heromanifesto {
         position: absolute;
         margin-left: 920px;
-        img{
+
+        img {
             width: 93%;
             border-bottom-right-radius: 21px;
             border-top-right-radius: 21px;
         }
     }
 
-    .caixa{
+    .caixa {
         position: absolute;
         margin-top: 250px;
         margin-left: 50px;
@@ -296,8 +340,8 @@ header {
         height: 100px;
         background-color: #EFE9BB;
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-        
-        p{
+
+        p {
             font-size: 20px;
             position: absolute;
             margin-left: 10px;
@@ -306,7 +350,7 @@ header {
     }
 }
 
-.caixabarbi{
+.caixabarbi {
     display: flex;
     width: 1400px;
     margin-left: 50px;
@@ -315,54 +359,56 @@ header {
     border-radius: 17px;
     background-color: #FFEFB0;
 
-    .linhaa{
+    .linhaa {
         position: absolute;
         margin-top: 247px;
         margin-left: 60px;
     }
 
-    .barbicentral{
+    .barbicentral {
         position: absolute;
         margin-left: 110px;
         margin-top: -90px;
 
-        img{
+        img {
             width: 100%;
         }
     }
 
-    .oculos{
+    .oculos {
         position: absolute;
         margin-left: 330px;
         margin-top: 52px;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
-    .style{
+    .style {
         position: absolute;
         margin-left: 600px;
         margin-top: 50px;
     }
 
-    .barbi{
+    .barbi {
         position: absolute;
         margin-left: 600px;
         margin-top: 85px;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
-    .styletxt{
+    .styletxt {
         position: absolute;
         margin-left: 600px;
         margin-top: 180px;
         width: 700px;
     }
 
-    .treslinhascardbarbi{
+    .treslinhascardbarbi {
         position: absolute;
         margin-left: 1310px;
         margin-top: 20px;
@@ -397,7 +443,8 @@ header {
         .estrelahero {
             left: 370px;
             top: 30px;
-            img{
+
+            img {
                 width: 50px;
             }
         }
@@ -405,16 +452,18 @@ header {
         .tresfaixa {
             left: 250px;
             top: 500px;
-            img{
-            width: 2px;
+
+            img {
+                width: 2px;
             }
         }
 
         .cobrinha {
             left: 20px;
             top: 470px;
-            img{
-            width: 60px;
+
+            img {
+                width: 60px;
             }
         }
 
@@ -558,8 +607,9 @@ header {
         .linhaa {
             margin-left: 300px;
             margin-top: 560px;
-            img{
-            width: 80px;
+
+            img {
+                width: 80px;
             }
         }
 
