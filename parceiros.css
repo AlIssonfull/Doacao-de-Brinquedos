@@ -6,60 +6,104 @@
 }
 
 header {
-  background-color: #e61616;
+  background-color: #E61616;
   width: 100%;
-  padding: 0px 25px 0px 25px;
+  padding: 0 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media (max-width: 845px) {
-    width: 100%;
-  }
-
-  .menu {
-    display: flex;
-    display: none;
-    cursor: pointer;
-
-    @media (max-width: 845px) {
-      display: block;
-    }
-
-    img {
-      width: 50px;
-    }
-  }
+  position: relative;
 
   img {
     width: 100px;
     padding: 10px;
   }
 
-  .escrita-inicio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-    margin-right: 50px;
-    color: white;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    border-radius: 25px;
+  .menu {
+    display: none;
+    cursor: pointer;
 
-    @media (max-width: 845px) {
+    img {
+      width: 30px;
+      padding: 0;
+    }
+
+    .mn {
       display: none;
     }
 
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      transition: 0.5s;
+    @media (max-width: 845px) {
+      display: block;
+    }
+  }
 
-      &:hover {
-        font-size: 22px;
-        transition: 0.5s;
+  .nav {
+    display: block;
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      margin-right: 50px;
+      color: white;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 25px;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 845px) {
+
+    .nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #E61616;
+      z-index: 10;
+      padding: 10px 0;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        gap: 15px;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 10px;
+
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &.menu-open {
+      .nav {
+        display: block;
+      }
+
+      #menu {
+        display: none;
+      }
+
+      #menuC {
+        display: block;
       }
     }
   }
