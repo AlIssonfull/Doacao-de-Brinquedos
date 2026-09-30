@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Capriola', sans-serif;
+}
+
+header {
+    background-color: #E61616;
+    width: 100%;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu {
+        display: flex;
+        display: none;
+        cursor: pointer;
+
+        @media (max-width:845px) {
+            display: block;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+
+    img {
+        width: 100px;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-right: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 25px;
+
+        @media (max-width:845px) {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s;
+            font-family: "Fredoka", sans-serif;
+            font-weight: 600;
+
+            &:hover {
+                font-size: 22px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.painel{
+    display: flex;
+    img{
+        width: 100%;
+    }
+}
+
+main {
+    min-height: calc(100vh - 48px);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 22px 20px 55px;
+}
+
+
+/* PAINEL */
+
+.formulario {
+    margin-top: 75px;
+    height: 500px;
+    width: 100%;
+    max-width: 880px;
+
+    background-color: #FFFCEB;
+
+    border-radius: 20px;
+
+    padding: 15px 30px 25px;
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+}
+
+
+/* LOGO MATTEL */
+
+.logo-mattel {
+    position: relative;
+    margin-top: -50px;
+    margin-left: 350px;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 35px;
+    row-gap: 50px;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.campo > label {
+    font-family: "Fredoka", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+    color: #111;
+}
+
+
+/* INPUT */
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="date"] {
+    width: 100%;
+    height: 38px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: white;
+
+    padding: 0 10px;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+    outline: none;
+}
+
+
+/* QUANDO CLICAR NO INPUT */
+
+.campo input:focus {
+    box-shadow: 0 0 0 2px #E61616;
+}
+
+
+/* =========================
+   ESTADO DO BRINQUEDO
+========================= */
+
+.estado {
+    justify-content: flex-start;
+}
+
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.opcoes input {
+    margin: 0;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+
+.squishy i {
+  width: 1.75rem;
+  height: 1.75rem;
+      text-decoration: none;
+          font-family: "Fredoka", sans-serif;
+}
+
+/* Classic Squishy */
+.squishy-classic {
+  background-color: #F1D500;
+  color: #242424;
+      text-decoration: none;
+          font-family: "Fredoka", sans-serif;
+  border-radius: 0.5rem;
+  box-shadow: 
+    inset 0 1px 0 0 #e4c900,
+    0 1px 0 0 #d8bf00,
+    0 2px 0 0 #cfb701,
+    0 4px 0 0 #ceb600,
+    0 5px 0 0 #bda700,
+    0 6px 0 0 #ceb600,
+    0 7px 0 0 #c7b000,
+    0 7px 8px 0 #bda700;
+}
+
+.squishy-classic:hover {
+  transform: translateY(4px);
+  box-shadow: 
+    inset 0 1px 0 0 #bda700,
+    0 1px 0 0 #bda700,
+    0 1px 0 0 #bda700,
+    0 2px 0 0 #bda700,
+    0 2px 0 0 #bda700,
+    0 3px 0 0 #bda700,
+    0 4px 0 0 #bda700,
+    0 4px 6px 0 #bda700;
+}
+
+
+
+
+
+button {
+    grid-column: 1 / 3;
+
+    width: 100%;
+    height: 42px;
+
+    margin-top: -30px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #F1D500;
+
+    color: #111;
+
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    text-decoration: none;
+}
+
+
+button:hover {
+    background-color: #bda402;
+    font-family: "Fredoka", sans-serif;
+    text-decoration: none;
+    
+}
+
+
+
+@media (max-width: 845px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        padding: 0 15px;
+    }
+
+    header > img {
+        width: 60px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px 12px 40px;
+    }
+
+    .formulario {
+        padding: 15px 20px 25px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    button {
+        grid-column: 1;
+    }
+
+    .logo-mattel {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .formulario {
+        padding: 12px 15px 20px;
+        border-radius: 15px;
+    }
+
+    .campo > label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    header > img {
+        width: 75px;
+        padding: 5px;
+    }
+
+    header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .menu img {
+        width: 45px;
+        padding: 5px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+
+    /* PAINEL */
+    .painel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .painel img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* TEXTO */
+    .TXT {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+
+    /* TÍTULO */
+    .titulo {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+
+    /* CARDS */
+    .cardes {
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 25px;
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+
+    .cardes .card {
+        width: 74%;
+        max-width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 10%;
+        height: 10%;
+        object-fit: contain;
+    }
+
+    .card p {
+        font-size: 12px;
+        padding: 0 10px;
+        width: 210px;
+    }
+
+    .estrelas span {
+        font-size: 15px;
+    }
+
+    .estrelas small {
+        font-size: 11px;
+    }
+
+    .card button {
+        width: 20%;
+        height: 20px;
+    }
+
+
+    /* FUNDO JURASSIC */
+    .fundo {
+        width: 100%;
+        height: 350px;
+        margin-top: 60px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fundo > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fundo .direita {
+        display: none;
+        left: -1200px;
+        img{
+        width: 150px;
+        }
+    }
+
+    .fundo .centro {
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fundo .centro img {
+        width: 150px;
+    }
+
+    .fundo .esquerda {
+        position: absolute;
+        margin: 0;
+        
+        left: -80px;
+        top: 20px;
+        img{
+            width: 1500px;
+        }
+    }
+
+    .fundo .esquerda img {
+        margin-left: 60px;
+        width: 150px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVO - ATÉ 1000px
+========================================= */
+
+@media (max-width: 1000px) {
+
+    /* HEADER */
+    header {
+        padding: 0 20px;
+    }
+
+    header > img {
+        width: 85px;
+    }
+
+    header nav {
+        gap: 15px;
+        margin-right: 20px;
+        font-size: 17px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+
+    /* PAINEL */
+    .painel {
+        width: 100%;
+    }
+
+    .painel img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* TEXTO */
+    .TXT {
+        margin-left: 35px;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+
+    /* TÍTULO */
+    .titulo h1 {
+        font-size: 42px;
+    }
+
+
+    /* CARDS */
+    .cardes {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .cardes .card {
+        width: 300px;
+    }
+
+
+    /* FUNDO */
+    .fundo {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fundo .direita {
+        margin-left: 600px;
+    }
+
+    .fundo .direita img {
+        width: 400px;
+    }
+
+    .fundo .centro {
+        margin-left: 330px;
+        margin-top: 180px;
+    }
+
+    .fundo .centro img {
+        width: 280px;
+    }
+
+    .fundo .esquerda img {
+        width: 400px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVO - ATÉ 750px
+========================================= */
+
+@media (max-width: 750px) {
+
+    /* HEADER */
+    header {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    header > img {
+        width: 75px;
+        padding: 5px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .menu img {
+        width: 45px;
+        padding: 5px;
+    }
+
+
+    /* PAINEL */
+    .painel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .painel img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* TEXTO */
+    .TXT {
+        margin-left: 25px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+
+    /* TÍTULO */
+    .titulo {
+        margin-top: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 36px;
+    }
+
+
+    /* CARDS */
+    .cardes {
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        gap: 25px;
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+    .cardes .card {
+        width: 280px;
+        min-height: 390px;
+    }
+
+
+    /* IMAGEM DOS PRODUTOS */
+    .card > img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    /* TEXTO DOS CARDS */
+    .card p {
+        font-size: 13px;
+    }
+
+
+    /* BOTÕES */
+    .card button {
+        width: 230px;
+        height: 38px;
+    }
+
+
+    /* FUNDO JURASSIC */
+    .fundo {
+        width: 100%;
+        height: 350px;
+        margin-top: 60px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fundo > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* DINOSSAURO DA DIREITA */
+    .fundo .direita {
+        display: none;
+    }
+
+
+    /* DINOSSAURO DO CENTRO */
+    .fundo .centro {
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fundo .centro img {
+        width: 200px;
+    }
+
+
+    /* DINOSSAURO DA ESQUERDA */
+    .fundo .esquerda {
+        position: absolute;
+        margin: 0;
+        left: -30px;
+        top: 20px;
+    }
+
+    .fundo .esquerda img {
+        width: 250px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVO - ATÉ 500px
+========================================= */
+
+@media (max-width: 500px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        height: 65px;
+        padding: 0 10px;
+    }
+
+    header > img {
+        width: 70px;
+        padding: 5px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .menu img {
+        width: 42px;
+        padding: 4px;
+    }
+
+
+    /* PAINEL */
+    .painel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .painel img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* TEXTO */
+    .TXT {
+        margin-top: 18px;
+        margin-left: 18px;
+        font-size: 11px;
+    }
+
+
+    /* TÍTULO */
+    .titulo {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+
+    /* CARDS */
+    .cardes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+    .cardes .card {
+        width: 100%;
+        max-width: 300px;
+        min-height: 390px;
+        margin: 0 auto;
+    }
+
+
+    /* IMAGENS DOS PRODUTOS */
+    .card > img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    /* TEXTO DOS CARDS */
+    .card p {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+
+    /* BOTÕES */
+    .card button {
+        width: 230px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+
+    /* PREÇO */
+    .preco {
+        font-size: 14px;
+    }
+
+    .precotxt {
+        font-size: 14px;
+    }
+
+
+    /* LOGO MATTEL */
+    .preco-imagem .logomattel {
+        margin-left: 175px;
+    }
+
+    .preco-imagem .logomattel img {
+        width: 70px;
+    }
+
+
+    /* FUNDO JURASSIC */
+    .fundo {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fundo > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* DINOSSAURO DIREITA */
+    .fundo .direita {
+        display: none;
+    }
+
+
+    /* DINOSSAURO CENTRO */
+    .fundo .centro {
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fundo .centro img {
+        width: 170px;
+    }
+
+
+    /* DINOSSAURO ESQUERDA */
+    .fundo .esquerda {
+        position: absolute;
+        margin: 0;
+        left: -45px;
+        top: 25px;
+    }
+
+    .fundo .esquerda img {
+        width: 200px;
+    }
+}
