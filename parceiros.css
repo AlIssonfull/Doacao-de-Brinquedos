@@ -196,6 +196,13 @@ section {
       width: max-content;
       display: flex;
       animation: deslizar 15s linear infinite;
+
+      @media (max-width:831px) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .parceiros {
@@ -393,7 +400,14 @@ section {
   @media (max-width: 845px) {
     display: flex;
     width: 80%;
+  }
 
+  @media (max-width: 831px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -405,6 +419,16 @@ section {
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+
+  @media (max-width: 831px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
